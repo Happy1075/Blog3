@@ -63,7 +63,7 @@ const CreateBlog = () => {
     };
 
     try {
-      await axios.post('/blogs', finalFormData, {
+      await axios.post('https://blog3-rs2o.onrender.com/blogs', finalFormData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

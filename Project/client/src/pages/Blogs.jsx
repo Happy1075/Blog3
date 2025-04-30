@@ -93,7 +93,7 @@ const Blogs = () => {
     const fetchBlogs = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('/blogs', {
+        const res = await axios.get('https://blog3-rs2o.onrender.com/blogs', {
           params: { category, author },
           headers: { Authorization: `Bearer ${token}` }
         });
@@ -112,7 +112,7 @@ const Blogs = () => {
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`/blogs/${id}`, {
+      await axios.delete(`https://blog3-rs2o.onrender.com/blogs/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setBlogs(blogs.filter(blog => blog._id !== id));

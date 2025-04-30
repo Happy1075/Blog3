@@ -55,7 +55,7 @@ export default function Signup(props) {
     setSuccess('');
 
     try {
-      const res = await axios.post('http://localhost:5000/auth/signup', {
+      const res = await axios.post('https://blog3-rs2o.onrender.com/auth/signup', {
         name: form.name,
         email: form.email,
         password: form.password

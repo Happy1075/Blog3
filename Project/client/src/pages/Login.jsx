@@ -56,7 +56,7 @@ export default function LoginFinal(props) {
     setError('');
 
     try {
-      const res = await axios.post('/auth/login', {
+      const res = await axios.post('https://blog3-rs2o.onrender.com/auth/login', {
         email: form.email,
         password: form.password,
       });

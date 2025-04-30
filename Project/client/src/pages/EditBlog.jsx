@@ -57,7 +57,7 @@ const EditBlog = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await axios.get(`/blogs/${id}`, {
+        const res = await axios.get(`https://blog3-rs2o.onrender.com/blogs/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
@@ -74,7 +74,7 @@ const EditBlog = () => {
     e.preventDefault();
 
     try {
-      await axios.put(`/blogs/${id}`, formData, {
+      await axios.put(`https://blog3-rs2o.onrender.com/blogs/${id}`, formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

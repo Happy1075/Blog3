@@ -14,7 +14,8 @@ const app = express();
 
 // Middleware for CORS (allow frontend requests from localhost:3000)
 const corsOptions = {
-  origin: 'http://localhost:3000', // React frontend
+  // origin: 'http://localhost:3000', // React frontend
+  origin:'*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 };
 

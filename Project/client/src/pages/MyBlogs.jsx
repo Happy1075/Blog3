@@ -71,7 +71,7 @@ const MyBlogs = () => {
     const fetchMyBlogs = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('/blogs', {
+        const res = await axios.get('https://blog3-rs2o.onrender.com/blogs', {
           params: { userId },
           headers: { Authorization: `Bearer ${token}` }
         });

@@ -11,7 +11,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await axios.get(`/blogs/${id}`, {
+        const res = await axios.get(`https://blog3-rs2o.onrender.com/blogs/${id}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
         setBlog(res.data);
