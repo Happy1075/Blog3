@@ -1,0 +1,52 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Compiled source
+*.com
+*.exe
+*.dll
+*.o
+*.so
+
+# Mac / Linux trash
+.Trash-*
+
+# VSCode settings
+.vscode/
+
+# Build directories
+dist/
+build/
+out/
+
+# Environment files
+.env
+.env.local
+
+# JetBrains IDEs
+.idea/
+
+# Backup files
+*~
+*.swp
+*.swo
